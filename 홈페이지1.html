@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<head>
+  <title>민들레꿈 공공장소 반려동물 분변 처리 솔루션</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+    width: 100%;
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #000 !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+ 
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">민들레꿈</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#company">COMPANY</a></li>
+        <li><a href="#customer">CUSTOMER</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="메인.jpg" alt="메인" width="600" height="350">
+        <div class="carousel-caption">
+          <h3>무엇을 위한 회사인가요?</h3>
+          <p>산책 중 발생하는 반려동물의 분변의 차별적 처리를 위한 노력</p>
+        </div>      
+      </div>
+    </div>
+
+</div>
+
+<div id="company" class="container text-center">
+  <h3>회사소개</h3>
+  <p><em>반려인에게도, 공공장소에도 도움이 되는 솔루션!</em></p>
+  <p>반려동물 배변은 단순히 반려인들만의 문제가 아닙니다. 반려동물, 특히 주변 활동이 필수적인 강아지를 기른다는 것은 개인의 문제가 아닙니다. 한 아이를 바르게 양육하기 위해 온 마을이 필요하다는 이야기처럼, 한 강아지가 행복하게 사는 데에도 우호적인 주변 환경이 필수적입니다. 하지만 한국은 아직 이 문제에 대해서 미흡합니다. 오히려 최근 반려가구가 점점 늘어나면서 애견인과 비애견인 사이의 문제 역시 점차 불거지고 있습니다. 한국의 강아지는 그 역사가 깊습니다. 하지만 오히려 그런 만큼 반려동물에 대한 도덕성과 상식에서 차이를 보이고 있습니다. 그렇기에 도덕적 의무와 에티켓 의식만으로는 일부 몰지각한 사람이 물을 흐리는 것을 막을 수 없습니다. 
+  <br>반려동물의 배변이라는 문제를 단순히 반려인들의 책임에 좌지우지되는 현 상황을 넘어, 반려인도 만족하고 반려인의 주변 역시 만족할 수 있는 환경을 구축하는 것. 그것이 저희의 목적입니다. ​
+  </p>
+  <button type="button" onclick="location.href='file:///C:/Users/ox09/Desktop/vscode/9-2/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%802.html'" class="btn btn-link">회사에 대해서 더 알아보기</button> 
+  <br>
+
+</div>
+
+
+<div id="customer" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">설치 장소</h3>
+    <p class="text-center">현재 저희의 솔루션이 설치된 장소입니다. <br> 회원가입 뒤 이용하실 수 있습니다.</p>
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="쓰레기통1.jpg" alt="과기대" width="150" height="100">
+          <p><strong>서울과학기술대학교</strong></p>
+          <br>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="쓰레기통2.jpg" alt="서대문구" width="400" height="600">
+          <p><strong>서대문구</strong></p>
+          <br>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="쓰레기통3.jpg" alt="노원구" width="400" height="600">
+          <p><strong>노원구</strong></p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+      <h3 class="text-center">평가</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">반려인</a></li>
+    <li><a data-toggle="tab" href="#menu1">서대문구</a></li>
+    <li><a data-toggle="tab" href="#menu2">노원구</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>과기대 인근 반려인, 00씨</h2>
+      <p>민들레꿈의 솔루션이 설치된 뒤로 강아지에게 뿐만 아니라 다른 사람들에게도 보기 좋은 환경이 만들어졌어요</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>서대문구 지자체 직원, 00씨</h2>
+      <p>솔루션 설치 뒤로 주민들 평판이 올라가고 청소 문제도 줄어들었습니다.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>노원구 주민, 00씨</h2>
+      <p>솔루션이 설치되고 나서 강아지들이 많아진 거 같애요. 그만큼 나오기 좋아졋나봐요. 집값도 올랐어요. </p>
+    </div>
+  </div>
+  <br>
+      <button type="button" onclick="location.href= 'file:///C:/Users/ox09/Desktop/vscode/9-2/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%804.html'" class="btn btn-link">회원가입하기(개인)</button> 
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p><span class="glyphicon glyphicon-map-marker"></span>서울 노원구, 서울과학기술대학교</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: 010-0000-0000</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+      <br>
+      <button type="button" onclick="location.href= 'file:///C:/Users/ox09/Desktop/vscode/9-2/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%803.html?%EC%B2%98%EB%A6%AC%EC%A2%85%EB%A5%981=%EB%B0%9C%EC%A3%BC&%EC%8B%A0%EC%B2%AD+%EA%B0%AF%EC%88%98=#'" class="btn btn-link">솔루션 설치하기</button> 
+    </div>
+  </div>
+  <br>
+</div>
+
+<!-- Image of location/map -->
+<img src="map.jpg" class="img-responsive" style="width:100%">
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By 19101954 진상현</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
